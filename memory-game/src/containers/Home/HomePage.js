@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import { Dashboard, DashboardMenu, DashboardButtons } from "../../Components";
 
 const HomePage = () => (
-    <h1>
-        Olá Mundo
-    </h1>
-)
+  <Dashboard>
+    <DashboardMenu title="Joj da Memoria">
+     <DashboardButtons to="/game">Iniciar joj</DashboardButtons>
+    </DashboardMenu>
+  </Dashboard>
+);
 
 export default HomePage;
